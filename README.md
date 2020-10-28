@@ -24,6 +24,6 @@ Specifications of the machine I used to run the programs in this repository:
 
 For Part I, I will be exploring the popular in-memory key–value database Redis. 
 
-![alt text](images/redis.png)
+<center>![alt text](images/redis.png)</center>
 
 Originally developed by Salvatore Sanfilippo, Redis is currently the most widely used Key-Value store system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in C and thoroughly optimized to provide high speed and low latency making it a great candidate for used as a cache, message broker or even general-purpose database. Throughout this part, I will install Redis, use it to load data and benchmark its performance with datasets of different sizes.
