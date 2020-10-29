@@ -20,10 +20,35 @@ Specifications of the machine I used to run the programs in this repository:
 
 #### Repository Folder Structure:
 
-### Part I: Performance Measurement of your favorite Key-Value Store
+# Part I: Performance Measurement of your favorite Key-Value Store
 
-For Part I, I will be exploring the popular in-memory key–value database Redis. 
+### For Part I, I will be exploring the popular in-memory key–value database Redis. 
 
 <div style="text-align:center"><img src="images/redis.png" width="47%" height="47%" class="center"/></div>
 
 Originally developed by Salvatore Sanfilippo, Redis is currently the most widely used Key-Value store system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in C and thoroughly optimized to provide high speed and low latency making it a great candidate for used as a cache, message broker or even general-purpose database. Throughout this part, I will install Redis, use it to load data and benchmark its performance with datasets of different sizes.
+
+### 1. Installation
+
+The following installation steps are meant a machine running MacOS. If your machine is following a different operating system, please refer to the official Redis documentation at https://redis.io/topics/quickstart.
+
+- **Install Homebrew**:
+
+Homebrew is a Package Manager for MacOS (or linux) that makes it easier to install programs and packages. To install it, open the terminal and run the following command:
+
+```shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
+```
+
+- **Install Redis**:
+
+After installing Homebrew, simply run the following command in the terminal to install Redis:
+
+```shell
+    brew install redis
+```
+
+You should see the following messages on your terminal:
+
+
+
