@@ -50,5 +50,32 @@ After installing Homebrew, simply run the following command in the terminal to i
 
 You should see the following messages on your terminal:
 
+<div style="text-align:center"><img src="images/redis-shell-1.png" width="65%" height="65%" class="center"/></div>
 
+- **Test Redis**:
 
+Check which Redis version was installed (should be the most updated version):
+
+```shell
+    redis-server --version
+```
+
+Start the Redis service. By default, redis runs on port 6379, but this could be changed in the redis configuration file redis.conf located at /usr/local/etc/:
+
+```shell
+    brew services start redis
+```
+    Start the redis-cli and test the connection:
+
+```shell
+    redis-cli
+    ping
+```
+
+If you recieve a response saying "PONG", you properly installed Redis in your machine. You can quit from the cli by running:
+
+```shell
+    quit
+```
+
+<div style="text-align:center"><img src="images/redis-shell-2.png" width="65%" height="65%" class="center"/></div>
