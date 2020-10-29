@@ -20,7 +20,7 @@ Specifications of the machine I used to run the programs in this repository:
 
 #### Repository Folder Structure:
 
-#### Part I: Performance Measurement of your favorite Key-Value Store
+### Part I: Performance Measurement of your favorite Key-Value Store
 
 For Part I, I will be exploring the popular in-memory key–value database Redis. 
 
