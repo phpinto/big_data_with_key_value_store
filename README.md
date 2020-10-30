@@ -79,3 +79,7 @@ If you recieve a response saying "PONG", you properly installed Redis in your ma
 ```
 
 <div style="text-align:center"><img src="images/redis-shell-2.png" width="65%" height="65%" class="center"/></div>
+
+### 3. Performance Benchmarking
+
+
