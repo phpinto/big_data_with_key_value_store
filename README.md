@@ -3,11 +3,14 @@ Homework 4 for CS 6220 Big Data Systems &amp; Analytics. Problem 1. Hand-on Expe
 
 # Introduction
 
+
 #### Requirements:
 Installed software required to run the programs in this repository:
 - Java 14.0.2
 - JDK 14.0.2
-- Hadoop 3.3.0
+- Python 2.7.18
+- Redis 6.0.9
+- HBase 2.3.2
 - Git 2.28.0 (optional)
 
 #### My system description:
@@ -16,11 +19,16 @@ Specifications of the machine I used to run the programs in this repository:
 - 2 GHz Quad-Core Intel Core i5 (10th Generation)
 - 16 GB RAM
 - 500 GB SSD
-- Hadoop running on Pseudo-Distributed mode
 
 #### Repository Folder Structure:
+- **output:** 
+    - Outuputs of the benchmarking results.
+- **executable_scripts:** 
+    - Executable shell scripts to run the benchmarking tests.
+- **images:** 
+    - Contains all images used in the Readme file.
 
-# Part I: Performance Measurement of your favorite Key-Value Store
+# Problem 1.1: Performance Measurement of your favorite Key-Value Store
 
 ### For Part I, I will be exploring the popular in-memory key–value database Redis. 
 
