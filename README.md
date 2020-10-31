@@ -140,15 +140,15 @@ Open a shell and run the following commands:
 
 YCSB provides a number of different workloads to test the performance of different data systems:
 
-+--------------------+--------------------------+---------------------+
-|      Workload      |        Operations        |  Record selection   |
-+--------------------+--------------------------+---------------------+
-|  A — Update heavy  |  Read: 50%, Update: 50%  |  Zipfian            |
-|  B — Read heavy    |  Read: 95%, Update: 5%   |  Zipfian            |
-|  C — Read only     |  Read: 100%              |  Zipfian            |
-|  D — Read latest   |  Read: 95%, Insert: 5%   |  Latest             |
-|  E — Short range   |  Scan: 95%, Insert: 5%   |  Zipfian / Uniform  |
-|  F — Read-modify-write   |  Read: 50%, Read-modify-write: 50%   |  Zipfian  |
-+--------------------+--------------------------+---------------------+
+Workloads:     
+A — Update heavy: Read: 50%, Update: 50% 
+B — Read heavy: Read: 95%, Update: 5%  
+C — Read only: Read: 100%             
+D — Read latest: Read: 95%, Insert: 5%  
+E — Short range: Scan: 95%, Insert: 5%  
+F — Read-modify-write: Read: 50%, Read-modify-write: 50% 
+
+
+
 
  Read-modify-write: Read, modify and update existing records
