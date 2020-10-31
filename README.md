@@ -148,7 +148,18 @@ D — Read latest: Read: 95%, Insert: 5%
 E — Short range: Scan: 95%, Insert: 5%  
 F — Read-modify-write: Read: 50%, Read-modify-write: 50% 
 
+To run the workload tests, you need to start Redis and HBase, copy the executable files inside the executable_scripts folder to the home folder of YCSB and run the following commands:
+
+```shell
+    sh ./redis_benchmark.sh
+    sh ./hbase_benchmark.sh
+```
+
+### 3. Performance Benchmarking Results
+
+<div style="text-align:center"><img src="images/load_time.png" width="65%" height="65%" class="center"/></div>
+<div style="text-align:center"><img src="images/load_latency.png" width="65%" height="65%" class="center"/></div>
+<div style="text-align:center"><img src="images/run_time.png" width="65%" height="65%" class="center"/></div>
+<div style="text-align:center"><img src="images/run_latency.png" width="65%" height="65%" class="center"/></div>
 
 
-
- Read-modify-write: Read, modify and update existing records
