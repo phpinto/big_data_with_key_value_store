@@ -28,13 +28,21 @@ Specifications of the machine I used to run the programs in this repository:
 - **images:** 
     - Contains all images used in the Readme file.
 
-# Problem 1.1: Performance Measurement of your favorite Key-Value Store
+# Problem 1.2  Performance Comparison of two Key-Value Systems
 
-### For Part I, I will be exploring the popular in-memory key–value database Redis. 
+### For this problem, I will be comparing the popular in-memory key–value database Redis with the wide-column key-value data store HBase. 
+
+### I. Redis
 
 <div style="text-align:center"><img src="images/redis.png" width="47%" height="47%" class="center"/></div>
 
-Originally developed by Salvatore Sanfilippo, Redis is currently the most widely used Key-Value store system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in C and thoroughly optimized to provide high speed and low latency making it a great candidate for used as a cache, message broker or even general-purpose database. Throughout this part, I will install Redis, use it to load data and benchmark its performance with datasets of different sizes.
+Originally developed by Salvatore Sanfilippo, Redis is currently the most widely used Key-Value store system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in C and thoroughly optimized to provide high speed and low latency making it a great candidate for used as a cache, message broker or even general-purpose database.
+
+### I. Apache HBase
+
+<div style="text-align:center"><img src="images/hbase.png" width="47%" height="47%" class="center"/></div>
+
+Apache HBase is an open-source project that is currently the second most widely used wide-column system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in Java and originally modeled after Google's Bigtable project. HBase significantly outperforms traditional relational databases when performing analytics in extremely large datasets.
 
 ### 1. Installation
 
@@ -87,6 +95,32 @@ If you recieve a response saying "PONG", you properly installed Redis in your ma
 ```
 
 <div style="text-align:center"><img src="images/redis-shell-2.png" width="65%" height="65%" class="center"/></div>
+
+- **Install HBase**:
+
+```shell
+    brew install hbase
+```
+
+You should see the following messages on your terminal:
+
+<div style="text-align:center"><img src="images/redis-shell-1.png" width="65%" height="65%" class="center"/></div>
+
+- **Test HBase**:
+
+Check which Redis version was installed (should be the most updated version):
+
+```shell
+    brew services start hbase
+    hbase version
+```
+You should see the following messages on your terminal:
+
+<div style="text-align:center"><img src="images/hbase-shell.png" width="65%" height="65%" class="center"/></div>
+
+### 1. Installation
+
+The following installation steps are meant a machine running MacOS. If your machine is following a different operating system, please refer to the official Redis documentation at https://redis.io/topics/quickstart.
 
 ### 3. Performance Benchmarking
 
