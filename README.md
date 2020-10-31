@@ -118,10 +118,37 @@ You should see the following messages on your terminal:
 
 <div style="text-align:center"><img src="images/hbase-shell.png" width="65%" height="65%" class="center"/></div>
 
-### 1. Installation
 
-The following installation steps are meant a machine running MacOS. If your machine is following a different operating system, please refer to the official Redis documentation at https://redis.io/topics/quickstart.
+### 2. Performance Benchmarking
 
-### 3. Performance Benchmarking
+To Benchmark the performance of both store systems, I used the Yahoo! Cloud Serving Benchmark found add https://github.com/brianfrankcooper/YCSB
 
+#### Installing YCSB:
 
+To install YCSB, make sure you have Java (https://www.java.com/en/download/) and Maven (https://maven.apache.org/install.html) installed in your machine.
+
+Open a shell and run the following commands: 
+
+```shell
+    git clone https://github.com/brianfrankcooper/YCSB.git
+    cd YCSB
+    mvn -pl site.ycsb:redis-binding -am clean package
+    mvn -pl site.ycsb:hbase1-binding -am clean package
+```
+
+### Running Workload Tests:
+
+YCSB provides a number of different workloads to test the performance of different data systems:
+
++--------------------+--------------------------+---------------------+
+|      Workload      |        Operations        |  Record selection   |
++--------------------+--------------------------+---------------------+
+|  A — Update heavy  |  Read: 50%, Update: 50%  |  Zipfian            |
+|  B — Read heavy    |  Read: 95%, Update: 5%   |  Zipfian            |
+|  C — Read only     |  Read: 100%              |  Zipfian            |
+|  D — Read latest   |  Read: 95%, Insert: 5%   |  Latest             |
+|  E — Short range   |  Scan: 95%, Insert: 5%   |  Zipfian / Uniform  |
+|  F — Read-modify-write   |  Read: 50%, Read-modify-write: 50%   |  Zipfian  |
++--------------------+--------------------------+---------------------+
+
+ Read-modify-write: Read, modify and update existing records
