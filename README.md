@@ -38,7 +38,7 @@ Specifications of the machine I used to run the programs in this repository:
 
 Originally developed by Salvatore Sanfilippo, Redis is currently the most widely used Key-Value store system in the world according to [db-engines.com](https://db-engines.com/en/ranking). It was implemented in C and thoroughly optimized to provide high speed and low latency making it a great candidate for used as a cache, message broker or even general-purpose database.
 
-### I. Apache HBase
+### II. Apache HBase
 
 <div style="text-align:center"><img src="images/hbase.png" width="47%" height="47%" class="center"/></div>
 
