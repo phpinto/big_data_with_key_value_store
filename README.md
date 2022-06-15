@@ -22,7 +22,7 @@ Specifications of the machine I used to run the programs in this repository:
 
 #### Repository Folder Structure:
 - **output:** 
-    - Outuputs of the benchmarking results.
+    - Outputs of the benchmarking results.
 - **executable_scripts:** 
     - Executable shell scripts to run the benchmarking tests.
 - **images:** 
@@ -164,5 +164,5 @@ All the benchmark result files are located in the outputs folder
 <div style="text-align:center"><img src="images/run_time.png" width="65%" height="65%" class="center"/></div>
 <div style="text-align:center"><img src="images/run_latency.png" width="65%" height="65%" class="center"/></div>
 
-As can be seen, Redis significantly outperforms HBase in terms of run time, both for loading and running the jobs. As for the average latency, we got mixed results, with HBase outperforming Redis in some of the load tests. This results should be expected since Redis is a simpler key-value system extremelly optimized for speed. The tradeoff for speed is that HBase is more versatile and has more use cases since it is a wide column database. 
+As can be seen, Redis significantly outperforms HBase in terms of run time, both for loading and running the jobs. As for the average latency, we got mixed results, with HBase outperforming Redis in some of the load tests. This results should be expected since Redis is a simpler key-value system extremely optimized for speed. The tradeoff for speed is that HBase is more versatile and has more use cases since it is a wide column database. 
 
